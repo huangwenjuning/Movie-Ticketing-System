@@ -1,12 +1,12 @@
 <template>
-  <div class="bookdesk">
-    bookdesk
+  <div class="recommend">
+    recommend
   </div>
 </template>
 <script>
 export default {
-  name: 'bookdesk'
-}
+  name: 'recommend'
+};
 </script>
 <style lang="stylus" scoped>
 

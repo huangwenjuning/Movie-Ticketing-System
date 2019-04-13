@@ -1,7 +1,7 @@
-import Vue from 'vue'
-import Router from 'vue-router'
+import Vue from 'vue';
+import Router from 'vue-router';
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
   routes: [
@@ -9,21 +9,21 @@ export default new Router({
       path: '/',
       name: 'Index',
       component: () => import('@/pages/index'),
-      redirect: '/reader',
+      redirect: '/film',
       children: [{
-        path: '/reader',
-        name: 'Reader',
-        component: () => import('@/pages/reader/Reader')
+        path: '/film',
+        name: 'Film',
+        component: () => import('@/pages/film/Film')
       },
       {
-        path: '/classification',
-        name: 'ClassiFication',
-        component: () => import('@/pages/classification/ClassiFication')
+        path: '/cinema',
+        name: 'Cinema',
+        component: () => import('@/pages/cinema/Cinema')
       },
       {
-        path: '/bookdesk',
-        name: 'BookDesk',
-        component: () => import('@/pages/bookdesk/BookDesk')
+        path: '/recommend',
+        name: 'Recommend',
+        component: () => import('@/pages/recommend/Recommend')
       },
       {
         path: '/mine',
@@ -33,4 +33,4 @@ export default new Router({
     }
   ],
   mode: 'history'
-})
+});

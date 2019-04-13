@@ -5,11 +5,11 @@
   </div>
 </template>
 <script>
-import TabBar from '../components/TabBar'
+import TabBar from '../components/TabBar';
 export default {
   name: 'Index',
   components: {
     TabBar
   }
-}
+};
 </script>

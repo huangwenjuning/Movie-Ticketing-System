@@ -8,7 +8,7 @@ export default {
   name: 'mine',
   components: {
   }
-}
+};
 </script>
 <style lang="stylus" scoped>
 

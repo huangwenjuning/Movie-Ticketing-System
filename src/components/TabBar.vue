@@ -18,14 +18,14 @@ export default {
     return {
       tabbarList: [],
       checked: [true]
-    }
+    };
   },
   methods: {
     changColor (index) {
       for (let i = 0; i < this.tabbarList.length; i++) {
-        this.checked[i] = false
+        this.checked[i] = false;
       }
-      this.$set(this.checked, index, true)
+      this.$set(this.checked, index, true);
     }
   },
   computed: {
@@ -33,13 +33,13 @@ export default {
   created () {
     this.$http.get('/tabbar').then(res => {
       if (res.data) {
-        this.tabbarList = res.data.tabbarList
+        this.tabbarList = res.data.tabbarList;
       } else {
-        this.tabbarList = []
+        this.tabbarList = [];
       }
-    })
+    });
   }
-}
+};
 </script>
 <style lang="stylus" scoped>
 .tabbar

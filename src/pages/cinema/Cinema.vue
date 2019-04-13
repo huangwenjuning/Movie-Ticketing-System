@@ -1,12 +1,12 @@
 <template>
-  <div class="classification">
-    classification
+  <div class="cenima">
+    cenima
   </div>
 </template>
 <script>
 export default {
-  name: 'classification'
-}
+  name: 'cenima'
+};
 </script>
 <style lang="stylus" scoped>
 
