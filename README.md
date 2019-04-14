@@ -105,3 +105,16 @@ npm run dev
 		2、授权认证
 		3、给使用的数据库添加用户
 
+
+
+
+#### pages目录说明
+
+film 首页
+cinema  影院
+recommend 推荐
+mine 我的
+filmDetail 电影详情页
+cinemaDetail 影院详情页
+pickSeat 选座
+

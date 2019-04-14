@@ -31,6 +31,11 @@ export default new Router({
         component: () => import('@/pages/mine/Mine')
       },
       {
+        path: '/city',
+        name: 'City',
+        component: () => import('@/pages/city/City')
+      },
+      {
         path: '/test',
         name: 'Test',
         component: () => import('@/components/HelloWorld')
