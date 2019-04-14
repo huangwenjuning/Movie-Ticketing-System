@@ -29,6 +29,11 @@ export default new Router({
         path: '/mine',
         name: 'Mine',
         component: () => import('@/pages/mine/Mine')
+      },
+      {
+        path: '/test',
+        name: 'Test',
+        component: () => import('@/components/HelloWorld')
       }]
     }
   ],

@@ -1,11 +1,15 @@
 <template>
   <div class="film">
-    film
+    <ShowingList />
   </div>
 </template>
 <script>
+import ShowingList from './components/ShowingList';
 export default {
-  name: 'film'
+  name: 'film',
+  components: {
+    ShowingList
+  }
 };
 </script>
 <style lang="stylus" scoped>
