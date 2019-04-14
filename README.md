@@ -88,9 +88,14 @@ npm run dev
 
 	node服务依然有bug
 
-
 	今天打算先把前端项目框架完善好
 	主色调选择为： #A52A2A;
+
+	新建了两个分支
+		develop
+		dev_hwj
+	git branch xxx
+	git checkout xxx
 
 后续：
 	给MongoDB创建用户
