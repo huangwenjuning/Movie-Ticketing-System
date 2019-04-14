@@ -9,7 +9,9 @@ import './assets/styles/border.css';
 import './assets/styles/reset.css';
 import './common/styles/index.styl';
 import './common/styles/iconfont/iconfont.css';
+import Mint from 'mint-ui';
 
+Vue.use(Mint);
 Vue.config.productionTip = false;
 Vue.prototype.$http = http;
 /* eslint-disable no-new */

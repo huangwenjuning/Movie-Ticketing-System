@@ -98,6 +98,7 @@ npm run dev
 
 	暂时先用mock模拟数据
 
+	安装配置mint-ui
 后续：
 	给MongoDB创建用户
 		1、创建管理员
