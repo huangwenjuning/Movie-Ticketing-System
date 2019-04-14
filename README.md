@@ -83,19 +83,20 @@ npm run dev
 		昨天做到太晚，依然没有解决当前碰到的问题。server添加路由无法访问，报错显示Not Found一直没有查到原因，后来MongoDB又启动失败，感觉孤军作战真的需要勇气和毅力。
 		好了，又是满满的一天，继续干。
 
-	https://brew.sh/index_zh-cn (Homebrew)
-	卸载了MongoDB，决定用brew命令来安装。
-
 	node服务依然有bug
 
 	今天打算先把前端项目框架完善好
 	主色调选择为： #A52A2A;
+
+	配置好了vuex
 
 	新建了两个分支
 		develop
 		dev_hwj
 	git branch xxx
 	git checkout xxx
+
+	暂时先用mock模拟数据
 
 后续：
 	给MongoDB创建用户
