@@ -1,6 +1,6 @@
 <template>
   <div class="film-card">
-      <div class="film-card-container border-bottom">
+      <div class="film-card-container thin-border-bottom">
           <div class="card-left">
               <img src="https://p1.meituan.net/128.180/movie/c63849c7a9de360a7b192bc322792a111705236.jpg" alt="">
           </div>
@@ -28,10 +28,9 @@ export default {
 </script>
 <style lang="stylus" scoped>
 .film-card
-    padding 0 .1rem
     background #fff
     .film-card-container
-        padding .2rem 0
+        margin .2rem 0
         display flex
         .card-left
             img
