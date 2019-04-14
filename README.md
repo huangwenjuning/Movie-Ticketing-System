@@ -97,6 +97,7 @@ npm run dev
 	git branch xxx
 	git checkout xxx
 
+	安装配置mint-ui
 后续：
 	给MongoDB创建用户
 		1、创建管理员
