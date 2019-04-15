@@ -29,17 +29,22 @@ export default new Router({
         path: '/mine',
         name: 'Mine',
         component: () => import('@/pages/mine/Mine')
-      },
-      {
-        path: '/city',
-        name: 'City',
-        component: () => import('@/pages/city/City')
-      },
-      {
-        path: '/test',
-        name: 'Test',
-        component: () => import('@/components/HelloWorld')
       }]
+    },
+    {
+      path: '/city',
+      name: 'City',
+      component: () => import('@/pages/city/City')
+    },
+    {
+      path: '/filmDetail',
+      name: 'FilmDetail',
+      component: () => import('@/pages/filmDetail/FilmDetail')
+    },
+    {
+      path: '/test',
+      name: 'Test',
+      component: () => import('@/components/HelloWorld')
     }
   ],
   mode: 'history'
