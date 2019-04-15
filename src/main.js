@@ -9,8 +9,10 @@ import './assets/styles/iconfont/iconfont.css';
 import Mint from 'mint-ui';
 import 'mint-ui/lib/style.css';
 import '@/assets/styles/index.styl';
+import VueAwesomeSwiper from 'vue-awesome-swiper'; // 轮播
 
 Vue.use(Mint);
+Vue.use(VueAwesomeSwiper);
 Vue.config.productionTip = false;
 Vue.prototype.$http = http;
 /* eslint-disable no-new */

@@ -125,7 +125,9 @@ recommend 推荐
 mine 我的
 filmDetail 电影详情页
 cinemaDetail 影院详情页
+city 城市
 pickSeat 选座
+confirmOrder 确认订单
 
 #### components 公共组件说明
 CinemaCard 影院展示卡片
@@ -136,4 +138,4 @@ NavBar 头部导航
 ScheduleCard 放映场次展示卡片
 TabBar 底部导航
 Template 空白三明治
-
+TicketCard 订单电影展示Card
