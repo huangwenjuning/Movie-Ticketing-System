@@ -42,6 +42,11 @@ export default new Router({
       component: () => import('@/pages/filmDetail/FilmDetail')
     },
     {
+      path: '/cinemaDetail',
+      name: 'CinemaDetail',
+      component: () => import('@/pages/cinemaDetail/CinemaDetail')
+    },
+    {
       path: '/test',
       name: 'Test',
       component: () => import('@/components/HelloWorld')

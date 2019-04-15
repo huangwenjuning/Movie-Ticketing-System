@@ -127,3 +127,13 @@ filmDetail 电影详情页
 cinemaDetail 影院详情页
 pickSeat 选座
 
+#### components 公共组件说明
+CinemaCard 影院展示卡片
+FilmCard 电影展示卡片
+FilmDetailCard 电影详情展示卡片
+HeaderContainer 头部内容 城市定位及搜索
+NavBar 头部导航
+ScheduleCard 放映场次展示卡片
+TabBar 底部导航
+Template 空白三明治
+

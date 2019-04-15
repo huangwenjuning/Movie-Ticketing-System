@@ -2,16 +2,19 @@
   <div class="film-detail">
     <NavBar />
     <FilmDetailCard />
+    <ContentBox />
   </div>
 </template>
 <script>
 import FilmDetailCard from '@/components/FilmDetailCard';
 import NavBar from '@/components/NavBar';
+import ContentBox from './components/ContentBox';
 export default {
   name: 'film-detail',
   components: {
     NavBar,
-    FilmDetailCard
+    FilmDetailCard,
+    ContentBox
   }
 };
 </script>

@@ -20,6 +20,7 @@
         </div>
       </div>
     </div>
+    <!-- <div class="blur-background"></div> -->
   </div>
 </template>
 <script>
@@ -30,8 +31,9 @@ export default {
 <style lang="stylus" scoped>
 .film-detail-card
   background #ffffff
-  border-top-left-radius .24rem
-  border-top-right-radius .24rem
+  // border-top-left-radius .24rem
+  // border-top-right-radius .24rem
+  position relative
   .film-detail-card-container
     display flex
     padding .2rem .2rem .1rem
