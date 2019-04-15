@@ -30,7 +30,7 @@ export default {
 .film-card
     background #fff
     .film-card-container
-        margin .2rem 0
+        padding .2rem
         display flex
         .card-left
             img

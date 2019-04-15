@@ -71,5 +71,5 @@ export default {
       line-height .2rem
 
   .isSelected
-    color #A52A2A
+    color #ef4f4f
 </style>
