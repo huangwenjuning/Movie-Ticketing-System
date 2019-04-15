@@ -10,8 +10,8 @@
       <mt-tab-container-item id="1" class="showing">
           <FilmCard />
       </mt-tab-container-item>
-      <mt-tab-container-item id="2">
-          <mt-cell v-for="(n, index) in 4" :title="'测试 ' + n" :key="index"/>
+      <mt-tab-container-item id="2" class="showing">
+          <FilmCard />
       </mt-tab-container-item>
     </mt-tab-container>
   </div>

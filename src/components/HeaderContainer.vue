@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <div class="header-container">
     <div class="header-city">
       <div class="header-city_name color-light fs-28x">南昌<i>icon</i></div>
     </div>
@@ -10,7 +10,7 @@
 </template>
 <script>
 export default {
-  name: 'header',
+  name: 'header-container',
   data () {
     return {
       searchValue: ''
@@ -20,7 +20,7 @@ export default {
 </script>
 <style lang="stylus" scoped>
 @import '~styles/var.styl'
-.header
+.header-container
   background $color-primary
   padding .1rem
   display flex

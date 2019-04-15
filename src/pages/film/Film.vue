@@ -1,16 +1,16 @@
 <template>
   <div class="film">
-    <Header />
+    <HeaderContainer />
     <ShowingList />
   </div>
 </template>
 <script>
-import Header from '@/components/Header';
+import HeaderContainer from '@/components/HeaderContainer';
 import ShowingList from './components/ShowingList';
 export default {
   name: 'film',
   components: {
-    Header,
+    HeaderContainer,
     ShowingList
   }
 };

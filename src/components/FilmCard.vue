@@ -1,5 +1,5 @@
 <template>
-  <div class="film-card">
+  <div class="film-card" @click="handleClick">
       <div class="film-card-container thin-border-bottom">
           <div class="card-left">
               <img src="https://p1.meituan.net/128.180/movie/c63849c7a9de360a7b192bc322792a111705236.jpg" alt="">
@@ -12,7 +12,7 @@
               <div class="card-center_starring text-ellipsis">主演：古天乐，郑嘉颖，林峰</div>
           </div>
           <div class="card-right">
-              <mt-button type="danger" size="small">购票</mt-button>
+              <mt-button type="danger" size="small" @click.stop.prevent="handleClickToBuy">购票</mt-button>
           </div>
       </div>
   </div>
@@ -23,6 +23,14 @@ export default {
   data () {
     return {
     };
+  },
+  methods: {
+    handleClick () {
+      this.$router.push({ name: 'FilmDetail' });
+    },
+    handleClickToBuy () {
+      console.log('buy');
+    }
   }
 };
 </script>
