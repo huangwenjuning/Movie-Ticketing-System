@@ -10,6 +10,7 @@ import Mint from 'mint-ui';
 import 'mint-ui/lib/style.css';
 import '@/assets/styles/index.styl';
 import VueAwesomeSwiper from 'vue-awesome-swiper'; // 轮播
+import 'swiper/dist/css/swiper.css';
 
 Vue.use(Mint);
 Vue.use(VueAwesomeSwiper);

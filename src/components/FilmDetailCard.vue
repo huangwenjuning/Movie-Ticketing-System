@@ -14,9 +14,6 @@
             <div class="film-date color-regular-3 fs-28x mt-5x">上映时间：2019-04-01</div>
             <div class="film-like color-primary fs-30x wt-600 mt-10x">12万人想看</div>
           </div>
-          <div class="card-center-foot_right">
-            <i>love</i>
-          </div>
         </div>
       </div>
     </div>

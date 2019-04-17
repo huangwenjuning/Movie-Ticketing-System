@@ -1,37 +1,27 @@
 <template>
   <div class="cinema-detail">
-    <mt-navbar v-model="selected">
-      <mt-tab-item id="1">01-21</mt-tab-item>
-      <mt-tab-item id="5">09-12</mt-tab-item>
-      <mt-tab-item id="6">10-20</mt-tab-item>
-      <mt-tab-item id="4">10-20</mt-tab-item>
-      <mt-tab-item id="5">10-20</mt-tab-item>
-      <mt-tab-item id="6">10-20</mt-tab-item>
-      <mt-tab-item id="7">10-20</mt-tab-item>
-    </mt-navbar>
-
-    <!-- tab-container -->
-    <mt-tab-container v-model="selected">
-      <mt-tab-container-item id="1" class="showing">
-        <ScheduleCard />
-      </mt-tab-container-item>
-      <mt-tab-container-item id="2" class="showing">
-      </mt-tab-container-item>
-      <mt-tab-container-item id="3" class="showing">
-      </mt-tab-container-item>
-    </mt-tab-container>
+    <NavBar />
+    <SwiperFilm />
+    <SwiperDate />
+    <ScheduleCard />
   </div>
 </template>
 <script>
+import NavBar from '@/components/NavBar';
+import SwiperFilm from './components/SwiperFilm';
+import SwiperDate from './components/SwiperDate';
 import ScheduleCard from '@/components/ScheduleCard';
 export default {
   name: 'cinema-detail',
   components: {
+    NavBar,
+    SwiperFilm,
+    SwiperDate,
     ScheduleCard
   },
   data () {
     return {
-      selected: '1'
+
     };
   }
 };
