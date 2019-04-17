@@ -1,5 +1,5 @@
 <template>
-  <div class="cinema-card">
+  <div class="cinema-card" @click="handleClickToDetail">
     <div class="cinema-card_contaniner thin-border-bottom">
         <div class="cinema-card_top">
             <div class="cinema-name fs-32x text-ellipsis">完美世界影城</div>
@@ -19,7 +19,12 @@
 </template>
 <script>
 export default {
-  name: 'cinema-card'
+  name: 'cinema-card',
+  methods: {
+    handleClickToDetail () {
+      this.$router.push({name: 'CinemaDetail'});
+    }
+  }
 };
 </script>
 <style lang="stylus" scoped>
