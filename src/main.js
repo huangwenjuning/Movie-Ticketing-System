@@ -11,7 +11,6 @@ import 'mint-ui/lib/style.css';
 import '@/assets/styles/index.styl';
 import VueAwesomeSwiper from 'vue-awesome-swiper'; // 轮播
 import 'swiper/dist/css/swiper.css';
-// require('@/mock/index.js');
 
 Vue.use(Mint);
 Vue.use(VueAwesomeSwiper);

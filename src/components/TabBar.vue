@@ -12,6 +12,7 @@
   </div>
 </template>
 <script>
+import apiService from '@/api/index';
 export default {
   name: 'TabBar',
   data () {
@@ -31,7 +32,7 @@ export default {
   computed: {
   },
   created () {
-    this.$http.get('/movie/tabbar').then(res => {
+    this.$http.get(apiService.GET_TABBAR_LIST).then(res => {
       if (res.data) {
         this.tabbarList = res.data.tabbarList;
       } else {

@@ -17,6 +17,7 @@
   </div>
 </template>
 <script>
+import apiService from '@/api/index';
 import FilmCard from '@/components/FilmCard';
 export default {
   name: 'showing-list',
@@ -31,7 +32,7 @@ export default {
   },
   methods: {
     getshowingFilmList () {
-      this.$http.get('/movie/filmList').then(res => {
+      this.$http.get(apiService.GET_PLAYING_LIST).then(res => {
         console.log(res, 'res');
         if (res.data) {
           this.filmshowingList = res.data.filmList;
