@@ -8,7 +8,7 @@
     <!-- tab-container -->
     <mt-tab-container v-model="selected">
       <mt-tab-container-item id="1" class="showing">
-          <FilmCard />
+          <FilmCard :filmList="filmshowingList" />
       </mt-tab-container-item>
       <mt-tab-container-item id="2" class="showing">
           <FilmCard />
@@ -25,8 +25,24 @@ export default {
   },
   data () {
     return {
-      selected: '1'
+      selected: '1',
+      filmshowingList: []
     };
+  },
+  methods: {
+    getshowingFilmList () {
+      this.$http.get('/movie/filmList').then(res => {
+        console.log(res, 'res');
+        if (res.data) {
+          this.filmshowingList = res.data.filmList;
+        } else {
+          this.tabbarList = [];
+        }
+      });
+    }
+  },
+  created () {
+    this.getshowingFilmList();
   }
 };
 </script>

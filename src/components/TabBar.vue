@@ -31,7 +31,7 @@ export default {
   computed: {
   },
   created () {
-    this.$http.get('/tabbar').then(res => {
+    this.$http.get('/movie/tabbar').then(res => {
       if (res.data) {
         this.tabbarList = res.data.tabbarList;
       } else {

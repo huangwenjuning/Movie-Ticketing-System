@@ -11,6 +11,11 @@ import NavBar from '@/components/NavBar';
 import ContentBox from './components/ContentBox';
 export default {
   name: 'film-detail',
+  data () {
+    return {
+
+    };
+  },
   components: {
     NavBar,
     FilmDetailCard,

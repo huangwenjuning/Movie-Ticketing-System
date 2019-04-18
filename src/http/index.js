@@ -2,7 +2,7 @@ import axios from 'axios';
 
 axios.defaults.headers.post['Content-Type'] = 'application/json;charset=UTF-8';
 // 配置默认url/使用mock
-axios.defaults.baseURL = 'https://www.easy-mock.com/mock/5cb2c9d884550844eff76cf6/cenima';
+// axios.defaults.baseURL = 'https://www.easy-mock.com/mock/5cb2c9d884550844eff76cf6/cenima';
 
 // 配置超时默认值/2.5s
 var instance = axios.create();

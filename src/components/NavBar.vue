@@ -1,6 +1,6 @@
 <template>
   <div class="navbar">
-    <mt-header title="标题过长会隐藏后面的内容啊哈哈哈哈">
+    <mt-header :title="title">
         <div @click="$router.go(-1)" slot="left">
             <mt-button icon="back">返回</mt-button>
         </div>
@@ -11,6 +11,11 @@
 <script>
 export default {
   name: 'navbar',
+  props: {
+    title: {
+      type: String
+    }
+  },
   data () {
     return {
       titleValue: '无骛'

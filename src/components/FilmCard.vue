@@ -1,15 +1,15 @@
 <template>
-  <div class="film-card" @click="handleClick">
-      <div class="film-card-container thin-border-bottom">
+  <div class="film-card">
+      <div class="film-card-container thin-border-bottom" v-for="(item, index) in filmList" :key="index"  @click="handleClick(item.id)">
           <div class="card-left">
-              <img src="https://p1.meituan.net/128.180/movie/c63849c7a9de360a7b192bc322792a111705236.jpg" alt="">
+              <img :src="item.moviePoster" alt="">
           </div>
           <div class="card-center">
-              <div class="card-center_title text-ellipsis">反贪风暴</div>
+              <div class="card-center_title text-ellipsis">{{ item.filmName }}</div>
               <div class="card-center_score">
-                  <span class="score">评分</span><span class="score_num">9.2</span>
+                  <span class="score">评分</span><span class="score_num">{{ item.filmScore }}</span>
               </div>
-              <div class="card-center_starring text-ellipsis">主演：古天乐，郑嘉颖，林峰</div>
+              <div class="card-center_starring text-ellipsis">主演：{{ item.filmActors }}</div>
           </div>
           <div class="card-right">
               <mt-button type="danger" size="small" @click.stop.prevent="handleClickToBuy">购票</mt-button>
@@ -20,17 +20,25 @@
 <script>
 export default {
   name: 'film-card',
+  props: {
+    filmList: {
+      type: Array
+    }
+  },
   data () {
     return {
     };
   },
   methods: {
-    handleClick () {
-      this.$router.push({ name: 'FilmDetail' });
+    handleClick (id) {
+      this.$router.push({ name: 'FilmDetail', params: id });
     },
     handleClickToBuy () {
       console.log('buy');
     }
+  },
+  mounted () {
+    console.log(this.filmList, 'this.filmList');
   }
 };
 </script>
