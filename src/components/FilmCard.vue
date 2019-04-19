@@ -31,7 +31,11 @@ export default {
   },
   methods: {
     handleClick (id) {
-      this.$router.push({ name: 'FilmDetail', params: id });
+      console.log(id, 'id');
+      let param = {
+        filmId: id
+      };
+      this.$router.push({ name: 'FilmDetail', params: param });
     },
     handleClickToBuy () {
       console.log('buy');

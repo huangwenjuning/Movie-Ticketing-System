@@ -12,7 +12,7 @@
         <Cinema class="mt-5x" />
       </mt-tab-container-item>
       <mt-tab-container-item id="2" class="showing">
-          <Detail class="mt-5x" />
+          <Detail :synopsis="content.synopsis" class="mt-5x" />
       </mt-tab-container-item>
       <mt-tab-container-item id="3" class="showing">
       </mt-tab-container-item>
@@ -24,6 +24,11 @@ import Cinema from '@/components/CinemaCard';
 import Detail from './Detail.vue';
 export default {
   name: 'film-detail',
+  props: {
+    content: {
+      type: Object
+    }
+  },
   data () {
     return {
       selected: '1'

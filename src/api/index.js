@@ -20,7 +20,7 @@ const GET_PLAYING_LIST = `${API}/film`;
   token：可选，用户标识
   filmId: 必选，电影id
 */
-const POST_CURRENT_FILM_DETAIL = `${API}/film/filmDetails`;
+const POST_CURRENT_FILM_DETAIL = `${API}/film/filmDetail`;
 
 export default{
   SAT_HOST,

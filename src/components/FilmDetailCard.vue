@@ -2,17 +2,17 @@
   <div class="film-detail-card">
     <div class="film-detail-card-container">
       <div class="detail-card-container_left">
-        <img src="https://p1.meituan.net/128.180/movie/c63849c7a9de360a7b192bc322792a111705236.jpg" alt="">
+        <img :src="filmDetail.moviePoster" alt="">
       </div>
       <div class="detail-card-container_right">
         <div class="detail-card-center_head">
-          <div class="film-name fs-48x color-regular-1 wt-700">反贪风暴</div>
+          <div class="film-name fs-48x color-regular-1 wt-700">{{ filmDetail.filmName }}</div>
         </div>
         <div class="detail-card-center_foot">
           <div class="card-center-foot_left">
-            <div class="film-kind color-regular-3 fs-28x mt-5x">分类: 动作/爱情/ 89分钟</div>
-            <div class="film-date color-regular-3 fs-28x mt-5x">上映时间：2019-04-01</div>
-            <div class="film-like color-primary fs-30x wt-600 mt-10x">12万人想看</div>
+            <div class="film-kind color-regular-3 fs-28x mt-5x">分类: {{ filmDetail.filmKinds[0] }}<span>{{ filmDetail.filmDuration }}</span></div>
+            <div class="film-date color-regular-3 fs-28x mt-5x">上映时间：{{ filmDetail.releaseDate }}</div>
+            <div class="film-like color-primary fs-30x wt-600 mt-10x">{{ filmDetail.filmWantPeople }}人想看</div>
           </div>
         </div>
       </div>
@@ -22,7 +22,12 @@
 </template>
 <script>
 export default {
-  name: 'film-detail-card'
+  name: 'film-detail-card',
+  props: {
+    filmDetail: {
+      type: Object
+    }
+  }
 };
 </script>
 <style lang="stylus" scoped>
