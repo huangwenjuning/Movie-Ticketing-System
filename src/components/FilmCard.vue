@@ -1,6 +1,6 @@
 <template>
   <div class="film-card">
-      <div class="film-card-container thin-border-bottom" v-for="(item, index) in filmList" :key="index"  @click="handleClick(item.id)">
+      <div class="film-card-container thin-border-bottom" v-for="(item, index) in filmList" :key="index"  @click="handleClick(item.filmId)">
           <div class="card-left">
               <img :src="item.moviePoster" alt="">
           </div>

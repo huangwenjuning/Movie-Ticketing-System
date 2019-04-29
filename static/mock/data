@@ -1,0 +1,15 @@
+// 电影数据设置
+db.getCollection("films").insert({
+    filmId: 1,
+    filmName: "复仇者联盟4：终局之战",
+    moviePoster: "https://p1.meituan.net/128.180/movie/c63849c7a9de360a7b192bc322792a111705236.jpg",
+    filmKinds: '动作/冒险/奇幻/美国/',
+    filmScore: 9.2,
+    synopsis: "漫威影业荣誉出品《复仇者联盟4：终局之战》，故事发生在灭霸消灭宇宙一半的生灵并重创复仇者联盟之后，剩余的英雄被迫背水一战，为22部漫威电影写下传奇终章。",
+    releaseDate: "2019-04-024",
+    filmDuration: "181分钟",
+    filmActors: "小罗伯特·唐尼",
+    filmWantPeople: "13万",
+    filmStatus: 0,
+    filmCinema:[1,2,3,4,5,6,7,8,9]
+});
