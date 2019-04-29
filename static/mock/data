@@ -2,14 +2,98 @@
 db.getCollection("films").insert({
     filmId: 1,
     filmName: "复仇者联盟4：终局之战",
-    moviePoster: "https://p1.meituan.net/128.180/movie/c63849c7a9de360a7b192bc322792a111705236.jpg",
+    moviePoster: "https://github.com/Hwj1220/Movie-Ticketing-System/blob/dev_hwj/src/assets/images/fczlm.jpg",
     filmKinds: '动作/冒险/奇幻/美国/',
     filmScore: 9.2,
     synopsis: "漫威影业荣誉出品《复仇者联盟4：终局之战》，故事发生在灭霸消灭宇宙一半的生灵并重创复仇者联盟之后，剩余的英雄被迫背水一战，为22部漫威电影写下传奇终章。",
     releaseDate: "2019-04-024",
     filmDuration: "181分钟",
     filmActors: "小罗伯特·唐尼",
-    filmWantPeople: "13万",
+    filmWantPeople: 1849927,
+    filmStatus: 0,
+    filmCinema:[1,2,3,4,5,6,7,8,9]
+});
+db.getCollection("films").insert({
+    filmId: 2,
+    filmName: "何以为家",
+    moviePoster: "https://github.com/Hwj1220/Movie-Ticketing-System/blob/dev_hwj/src/assets/images/hywj.jpg",
+    filmKinds: '剧情/黎巴嫩,法国,美国/',
+    filmScore: 9.2,
+    synopsis: "法庭上，十二岁的男孩赞恩向法官状告他的亲生父母，原因是，他们给了他生命。是什么样的经历让一个孩子做出如此不可思议的举动？故事中，赞恩的父母在无力抚养和教育的状况下依然不停生育，作为家中的长子赞恩，弱小的肩膀承担了无数生活的重压。当妹妹被强行卖给商贩为妻时，赞恩愤怒离家，之后遇到一对没有合法身份的母子，相互扶持勉强生活。然而生活并没有眷顾赞恩，重重磨难迫使他做出了令人震惊的举动……",
+    releaseDate: "2019-04-29",
+    filmDuration: "117分钟",
+    filmActors: "赞恩·阿尔·拉菲亚",
+    filmWantPeople: 101827,
+    filmStatus: 0,
+    filmCinema:[1,2,3,4,5,6,7,8,9]
+});
+db.getCollection("films").insert({
+    filmId: 3,
+    filmName: "下一任：前任",
+    moviePoster: "https://github.com/Hwj1220/Movie-Ticketing-System/blob/dev_hwj/src/assets/images/xyrqr.jpg",
+    filmKinds: '剧情/黎巴嫩,法国,美国/',
+    filmScore: 0,
+    synopsis: "林心恬（郭采洁 饰）的爱情路一直不顺，总是不能在对的时间遇到对的人。正当她心灰意冷时，缘份使她邂逅了多情暖男吾川（郑恺 饰），吾川对心恬展开狂热追求，最终心恬被打动。然而意料之外的是，心恬自学生时期就暗恋的学霸男神黄克群（李东学 饰）又出现了。是该选择近在眼前的幸福，还是多年前梦寐以求的白马王子？当心恬做出决定后才发现，原来爱情在冥冥中早已注定！",
+    releaseDate: "2019-05-01",
+    filmDuration: "99分钟",
+    filmActors: "郭采洁,郑恺,李东学",
+    filmWantPeople: 314825,
+    filmStatus: 1,
+    filmCinema:[1,2,3,4,5,6,7,8,9]
+});
+db.getCollection("films").insert({
+    filmId: 4,
+    filmName: "雪暴",
+    moviePoster: "https://github.com/Hwj1220/Movie-Ticketing-System/blob/dev_hwj/src/assets/images/xb.jpg",
+    filmKinds: '剧情/犯罪/动作/悬疑/',
+    filmScore: 8.2,
+    synopsis: "在一座极北的边陲小镇，一伙穷凶极恶、作案手法老到的悍匪为褫夺黄金，打劫运金车，并借助大雪掩盖了所有犯罪痕迹。为了探求真相，警察王康浩（张震 饰）暗地里搜集证据，熟悉地形，终于在一场灾难级的暴雪降临时，与谋财害命的悍匪发生了惊心动魄的正面对决……",
+    releaseDate: "2019-04-30",
+    filmDuration: "117分钟",
+    filmActors: "张震,廖凡,倪妮",
+    filmWantPeople: 27260,
+    filmStatus: 0,
+    filmCinema:[1,2,3,4,5,6,7,8,9]
+});
+db.getCollection("films").insert({
+    filmId: 5,
+    filmName: "动物出击",
+    moviePoster: "https://github.com/Hwj1220/Movie-Ticketing-System/blob/dev_hwj/src/assets/images/dwcj.jpg",
+    filmKinds: '剧情/冒险/科幻/家庭/',
+    filmScore: 0,
+    synopsis: "一艘满载剧毒原料的外籍巨轮被海盗劫持，转眼间船上所有的人全部离奇死亡！只有一只鹦鹉幸存。而这艘失去控制的巨轮仍按照自动驾驶程序向港口高速驶来......一场无人知晓的巨大灾难即将降临！生死关头，一个无意中能与动物对话的小女孩从动物那里知道了这个可怕的消息，但她把这个消息告诉大人时，没有人相信动物可以与人对话。危机之中，动物们行动起来，与女孩在一起，为拯救海洋，拯救岸上的城市和所有生命，迎着巨轮冲了上去。当女孩和动物们到达巨轮上时，他们却发现又一个更恐怖的惊天危机…… 饰）暗地里搜集证据，熟悉地形，终于在一场灾难级的暴雪降临时，与谋财害命的悍匪发生了惊心动魄的正面对决……",
+    releaseDate: "2019-04-30",
+    filmDuration: "105分钟",
+    filmActors: "景熙童",
+    filmWantPeople: 17109,
+    filmStatus: 0,
+    filmCinema:[1,2,3,4,5,6,7,8,9]
+});
+db.getCollection("films").insert({
+    filmId: 6,
+    filmName: "反贪风暴4",
+    moviePoster: "https://github.com/Hwj1220/Movie-Ticketing-System/blob/dev_hwj/src/assets/images/ftfb4.jpg",
+    filmKinds: '剧情/犯罪/动作/悬疑/',
+    filmScore: 9.1,
+    synopsis: "廉政公署收到报案人廖雨萍（周秀娜 饰）的实名举报，举报正在坐牢的富二代曹元元（林峯 饰）涉嫌行贿监狱里的监督沈济全（谭耀文 饰）以及惩教员，首席调查主任陆志廉（古天乐 饰）决定深入虎穴，卧底狱中。在监狱里，被陆志廉送入监狱的前警司黄文彬（林家栋 饰）以及曹元元两大帮派势成水火，陆志廉趁机接近曹元元取得信任。同时监狱外的廉政公署总调查主任程德明（郑嘉颖 饰）、国内反贪局行动处处长洪亮（丁海峰 饰）也陆港联手，通力合作，最终成功破获贪腐行贿大案。",
+    releaseDate: "2019-04-04",
+    filmDuration: "117分钟",
+    filmActors: "古天乐,郑嘉颖,林峯",
+    filmWantPeople: 161080,
+    filmStatus: 0,
+    filmCinema:[1,2,3,4,5,6,7,8,9]
+});
+db.getCollection("films").insert({
+    filmId: 7,
+    filmName: "撞死了一只羊",
+    moviePoster: "https://github.com/Hwj1220/Movie-Ticketing-System/blob/dev_hwj/src/assets/images/zslyzy.jpg",
+    filmKinds: '剧情/',
+    filmScore: 8.0,
+    synopsis: "司机金巴（金巴 饰）在路上撞死了一只羊，决意超度此羊；杀手金巴（更登彭措 饰）即将找到杀父仇人，准备报仇雪恨。阴差阳错，杀手金巴搭上了司机金巴的卡车。于是，两个叫金巴的男人的命运便神秘地联系在了一起，一段惊心动魄的旅程开始……",
+    releaseDate: "2019-04-26",
+    filmDuration: "87分钟",
+    filmActors: "金巴,更登彭措,索朗旺姆",
+    filmWantPeople: 8422,
     filmStatus: 0,
     filmCinema:[1,2,3,4,5,6,7,8,9]
 });
