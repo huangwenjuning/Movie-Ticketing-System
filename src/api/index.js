@@ -31,10 +31,20 @@ const POST_CURRENT_FILM_DETAIL = `${API}/film/filmDetail`;
 
 const GET_CINEMA_LIST = `${API}/cinema`;
 
+/*
+影院列表
+参数：
+  token：可选，用户标识
+  filmId: 必选，电影id
+*/
+
+const POST_LOGIN = `${API}/user/login`;
+
 export default{
   SAT_HOST,
   GET_TABBAR_LIST,
   GET_PLAYING_LIST,
   POST_CURRENT_FILM_DETAIL,
-  GET_CINEMA_LIST
+  GET_CINEMA_LIST,
+  POST_LOGIN
 };
