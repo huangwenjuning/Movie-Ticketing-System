@@ -50,6 +50,11 @@ export default new Router({
       path: '/test',
       name: 'Test',
       component: () => import('@/components/HelloWorld')
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component: () => import('@/pages/login/Login')
     }
   ],
   mode: 'history'
