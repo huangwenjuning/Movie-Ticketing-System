@@ -1,0 +1,72 @@
+db.getCollection("cinemas").insert( {
+    cinemaId: 1,
+    cinemaName: "金逸ShowBox影城(经开乐盈店)",
+    cinemaAddress: "青山湖区经开区枫林西大街299号IM·乐盈广场四层",
+    distance: '500m',
+    lowPrice: 19.9
+});
+
+db.getCollection("cinemas").insert( {
+    cinemaId: 2,
+    cinemaName: "完美世界影城(17.5乐买佳店)",
+    cinemaAddress: "青山湖区榴云路商业街88号乐买佳四楼",
+    distance: '700m',
+    lowPrice: 23
+});
+
+db.getCollection("cinemas").insert( {
+    cinemaId: 3,
+    cinemaName: "越幕影城(经开店)",
+    cinemaAddress: "青山湖区桂苑大道135号洪客隆英伦联邦16#栋第五层",
+    distance: '1km',
+    lowPrice: 27
+});
+
+db.getCollection("cinemas").insert( {
+    cinemaId: 4,
+    cinemaName: "星天地国际影城",
+    cinemaAddress: "青山湖区双港东大街55号财购广场5楼",
+    distance: '1.5km',
+    lowPrice: 23
+});
+
+db.getCollection("cinemas").insert( {
+    cinemaId: 5,
+    cinemaName: "亚影影城",
+    cinemaAddress: "青山湖区经济技术开发区志敏大道1101号农业大学南区公寓#栋第五层",
+    distance: '1.9km',
+    lowPrice: 28
+});
+
+db.getCollection("cinemas").insert( {
+    cinemaId: 6,
+    cinemaName: "南昌风云影城(领秀店)",
+    cinemaAddress: "青山湖区南昌经济技术开发区英雄大道6号力邦商贸广场1号楼#栋第五层",
+    distance: '4.5km',
+    lowPrice: 28
+});
+
+db.getCollection("cinemas").insert( {
+    cinemaId: 7,
+    cinemaName: "博纳国际影城(铜锣湾店)",
+    cinemaAddress: "东湖区铜锣湾广场5楼#栋第五层",
+    distance: '5.2km',
+    lowPrice: 33
+});
+
+db.getCollection("cinemas").insert( {
+    cinemaId: 8,
+    cinemaName: "万达影城(红谷滩店)",
+    cinemaAddress: "东湖区会展路999号万达广场3层（A1栋）#栋第五层",
+    distance: '5.3km',
+    lowPrice: 36.5
+});
+
+db.getCollection("cinemas").insert( {
+    cinemaId: 9,
+    cinemaName: "泰禾影城(南昌大都会店)",
+    cinemaAddress: "新建区明矾路66号大都会#栋第五层",
+    distance: '5.6km',
+    lowPrice: 23
+});
+

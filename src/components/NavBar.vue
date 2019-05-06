@@ -1,7 +1,7 @@
 <template>
   <div class="navbar">
     <mt-header :title="title">
-        <div @click="$router.go(-1)" slot="left">
+        <div @click="$router.go(-1)" slot="left" v-if="isShow">
             <mt-button icon="back">返回</mt-button>
         </div>
         <!-- <mt-button icon="more" slot="right"></mt-button> -->
@@ -14,6 +14,10 @@ export default {
   props: {
     title: {
       type: String
+    },
+    isShow: {
+      type: Boolean,
+      default: true
     }
   },
   data () {

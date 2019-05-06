@@ -22,9 +22,19 @@ const GET_PLAYING_LIST = `${API}/film`;
 */
 const POST_CURRENT_FILM_DETAIL = `${API}/film/filmDetail`;
 
+/*
+影院列表
+参数：
+  token：可选，用户标识
+  filmId: 必选，电影id
+*/
+
+const GET_CINEMA_LIST = `${API}/cinema`;
+
 export default{
   SAT_HOST,
   GET_TABBAR_LIST,
   GET_PLAYING_LIST,
-  POST_CURRENT_FILM_DETAIL
+  POST_CURRENT_FILM_DETAIL,
+  GET_CINEMA_LIST
 };

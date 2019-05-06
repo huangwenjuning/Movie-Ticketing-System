@@ -10,7 +10,7 @@
         </div>
         <div class="detail-card-center_foot">
           <div class="card-center-foot_left">
-            <div class="film-kind color-regular-3 fs-28x mt-5x">分类: {{ filmDetail.filmKinds[0] }}<span>{{ filmDetail.filmDuration }}</span></div>
+            <div class="film-kind color-regular-3 fs-28x mt-5x">分类: {{ filmDetail.filmKinds }}<span>{{ filmDetail.filmDuration }}</span></div>
             <div class="film-date color-regular-3 fs-28x mt-5x">上映时间：{{ filmDetail.releaseDate }}</div>
             <div class="film-like color-primary fs-30x wt-600 mt-10x">{{ filmDetail.filmWantPeople }}人想看</div>
           </div>

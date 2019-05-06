@@ -51,7 +51,7 @@ export default {
   left 0
   right 0
   background #fff
-
+  z-index 9
   a
     display block
     flex 1
